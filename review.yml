@@ -1,0 +1,81 @@
+aid: associated-banc-corp
+name: Associated Bank
+review:
+  question: Does Associated Bank expose a first-party public developer API, downloadable
+    OpenAPI/Swagger, FDX participation, or a stated CFPB 1033 data-access posture?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Associated Bank, N.A. (Associated Banc-Corp, NYSE: ASB) publishes no
+    first-party public developer portal and no downloadable OpenAPI/Swagger
+    specification. DNS probes for developer.associatedbank.com,
+    api.associatedbank.com and apis.associatedbank.com do not resolve
+    (no host). The institution's core-banking integration is mediated by its
+    core provider, Jack Henry, and documented on jackhenry.dev as a jXchange
+    SOAP provider (Account History Search, Account Inquiry, Account
+    Relationship Search, Transaction Add) — a partner/enterprise-gated surface
+    with no public WSDL/OpenAPI. Consumer-permissioned data access is
+    delivered through third-party aggregators (Plaid, Tink/TrueLayer) rather
+    than a direct first-party API. Commercial treasury customers use the
+    login-gated Associated Connect platform. No Financial Data Exchange (FDX)
+    participation and no published CFPB Section 1033 personal-financial-data
+    posture were found. This is an honest identity-only (aggregator- and
+    core-provider-gated) record: no public first-party API surface exists.
+  posture:
+    firstPartyDeveloperPortal: false
+    downloadableSpec: false
+    fdxParticipant: false
+    section1033Posture: none-published
+    aggregatorAccess: true
+    aggregators:
+      - Plaid
+      - Tink / TrueLayer
+    coreProvider: Jack Henry (jXchange SOAP)
+    commercialPlatform: Associated Connect (login-gated)
+    authModel: not-publicly-documented
+    specProvenance: none-harvested
+  transports:
+    - protocol: SOAP
+      scheme: https
+      documented: true
+      note: jXchange SOAP services listed for Associated Bank on jackhenry.dev; partner/enterprise-gated, no public WSDL/OpenAPI.
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No first-party REST developer API is documented by Associated Bank.
+  hostsProbed:
+    - host: developer.associatedbank.com
+      status: no-dns
+    - host: api.associatedbank.com
+      status: no-dns
+    - host: apis.associatedbank.com
+      status: no-dns
+    - host: www.associatedbank.com
+      status: 200
+    - host: newsroom.associatedbank.com
+      status: 200
+    - host: jackhenry.dev/jxchange-soap/api-provider/associated-bank/
+      status: 200
+sources:
+  - url: https://www.associatedbank.com/
+    type: Website
+    note: Corporate site; national bank serving WI, IL, IA, MN, MO, NE. No developer/API section.
+  - url: https://jackhenry.dev/jxchange-soap/api-provider/associated-bank/
+    type: Documentation
+    note: Associated Bank listed as a Jack Henry jXchange SOAP provider; enterprise/partner-gated, no public spec.
+  - url: https://www.openbankingtracker.com/provider/associated-bank
+    type: Reference
+    note: "No API products listed; access via aggregators (Plaid, Tink, TrueLayer). No FDX or 1033 posture noted."
+  - url: https://newsroom.associatedbank.com/
+    type: Blog
+    note: Newsroom; April 2026 completion of American National Corporation acquisition (~$50B total assets).
+actions:
+  apisYmlUpdated: true
+  openapiHarvested: false
+  reason: |
+    No first-party public API or downloadable specification exists to harvest.
+    Recorded one honest apis[] pointer to the core-provider (Jack Henry
+    jXchange) documentation page and captured the aggregator-only,
+    core-provider-mediated posture. No fabricated hosts, specs, or endpoints.

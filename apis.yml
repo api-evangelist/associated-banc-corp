@@ -1,0 +1,64 @@
+aid: associated-banc-corp
+url: https://raw.githubusercontent.com/api-evangelist/associated-banc-corp/refs/heads/main/apis.yml
+name: Associated Bank
+kind: company
+description: Associated Bank, N.A. is the primary banking subsidiary of Associated
+  Banc-Corp (NYSE ASB), a nationally chartered commercial bank and the largest bank
+  holding company headquartered in Wisconsin, based in Green Bay. With roughly $50
+  billion in total assets following the April 2026 acquisition of American National
+  Corporation, Associated operates a full-service Midwest banking franchise of more
+  than 200 locations across Wisconsin, Illinois, Iowa, Minnesota, Missouri and Nebraska,
+  offering consumer, business, commercial and wealth-management services. Associated
+  does not publish a first-party public developer portal or downloadable OpenAPI/Swagger
+  specifications. Its digital banking runs on a core-provider stack (Jack Henry),
+  and consumer-permissioned data access is delivered through third-party aggregators
+  (Plaid, Tink/TrueLayer) rather than a direct first-party API. Its commercial
+  treasury customers use the login-gated Associated Connect platform. No FDX
+  participation or CFPB Section 1033 data-access posture is publicly documented as
+  of this review.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Regional Bank
+- Commercial Banking
+- Data Aggregation
+- Open Finance
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis:
+- aid: associated-banc-corp:associated-bank-jxchange
+  name: Associated Bank jXchange (Jack Henry) Integration
+  description: Associated Bank surfaces core-banking integration through its core
+    provider, Jack Henry, via the jXchange SOAP API platform. Documented services
+    for this institution include Account History Search, Account Inquiry, Account
+    Relationship Search and Transaction Add. This is a partner/enterprise-gated,
+    core-provider-mediated surface — not a self-serve, first-party public API — and
+    no public WSDL/OpenAPI is published by Associated Bank itself.
+  humanURL: https://jackhenry.dev/jxchange-soap/api-provider/associated-bank/
+  tags:
+  - Core Banking
+  - SOAP
+  - Jack Henry
+  - jXchange
+  properties:
+  - type: Documentation
+    url: https://jackhenry.dev/jxchange-soap/api-provider/associated-bank/
+common:
+- type: Website
+  url: https://www.associatedbank.com/
+- type: Blog
+  url: https://newsroom.associatedbank.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/associated-bank
+- type: PrivacyPolicy
+  url: https://www.associatedbank.com/privacy
+- type: TermsOfService
+  url: https://www.associatedbank.com/terms-of-use
+- type: Support
+  url: https://www.associatedbank.com/contact
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

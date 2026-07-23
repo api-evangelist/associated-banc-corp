@@ -26,7 +26,7 @@ tags:
 - Data Aggregation
 - Open Finance
 created: '2026-07-23'
-modified: '2026-07-23'
+modified: '2026-07-24'
 specificationVersion: '0.19'
 apis:
 - aid: associated-banc-corp:associated-bank-jxchange
@@ -47,6 +47,10 @@ apis:
   - type: Documentation
     url: https://jackhenry.dev/jxchange-soap/api-provider/associated-bank/
 common:
+- type: DomainSecurity
+  url: security/associated-banc-corp-domain-security.yml
+- type: LLMsTxt
+  url: llms/associated-banc-corp-llms.txt
 - type: Website
   url: https://www.associatedbank.com/
 - type: Blog

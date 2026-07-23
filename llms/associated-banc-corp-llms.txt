@@ -1,0 +1,27 @@
+# Associated Bank
+
+> Associated Bank, N.A. is the primary banking subsidiary of Associated Banc-Corp (NYSE: ASB), a nationally chartered commercial bank and the largest bank holding company headquartered in Wisconsin (Green Bay). With roughly $50 billion in total assets, it operates a full-service Midwest franchise across Wisconsin, Illinois, Iowa, Minnesota, Missouri and Nebraska. Associated does not publish a first-party public developer portal or downloadable OpenAPI/Swagger specifications; core-banking integration is mediated by its core provider Jack Henry (jXchange SOAP), and consumer-permissioned data access is delivered through third-party aggregators (Plaid, Tink/TrueLayer).
+
+## APIs
+
+- [Associated Bank jXchange (Jack Henry) Integration](https://jackhenry.dev/jxchange-soap/api-provider/associated-bank/): Partner/enterprise-gated core-banking SOAP surface via Jack Henry jXchange. Documented services for this institution include Account History Search, Account Inquiry, Account Relationship Search and Transaction Add. No public WSDL/OpenAPI is published by Associated Bank itself.
+
+## Docs
+
+- [Jack Henry jXchange provider page](https://jackhenry.dev/jxchange-soap/api-provider/associated-bank/): Core-provider integration documentation for Associated Bank.
+- [Associated Connect](https://www.associatedbank.com/): Login-gated commercial treasury/cash-management platform used by Associated's business customers.
+
+## Company
+
+- [Website](https://www.associatedbank.com/)
+- [Newsroom / Blog](https://newsroom.associatedbank.com/)
+- [LinkedIn](https://www.linkedin.com/company/associated-bank)
+- [Privacy Policy](https://www.associatedbank.com/privacy)
+- [Terms of Use](https://www.associatedbank.com/terms-of-use)
+- [Contact / Support](https://www.associatedbank.com/contact)
+
+## Notes
+
+- No first-party public developer API, OpenAPI/Swagger specification, or self-serve API keys are published as of 2026-07-23.
+- No FDX participation or CFPB Section 1033 data-access posture is publicly documented.
+- Consumer-permissioned data access is available via third-party aggregators (Plaid, Tink/TrueLayer), not a direct Associated Bank API.

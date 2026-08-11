@@ -47,6 +47,8 @@ apis:
   - type: Documentation
     url: https://jackhenry.dev/jxchange-soap/api-provider/associated-bank/
 common:
+- type: ChangeLog
+  url: https://newsroom.associatedbank.com/releases
 - type: DomainSecurity
   url: security/associated-banc-corp-domain-security.yml
 - type: LLMsTxt

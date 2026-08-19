@@ -38,7 +38,7 @@ tags:
 - Open Finance
 created: '2026-07-23'
 modified: '2026-07-24'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: associated-banc-corp:associated-bank-jxchange
   name: Associated Bank jXchange (Jack Henry) Integration

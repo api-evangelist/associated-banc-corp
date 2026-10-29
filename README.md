@@ -1,4 +1,4 @@
-# Associated Bank (associated-banc-corp)
+# Associated Bank
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,64 +64,88 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Associated Bank, N.A. is the primary banking subsidiary of Associated Banc-Corp (NYSE: ASB), a nationally chartered commercial bank and the largest bank holding company headquartered in Wisconsin, based in Green Bay. With roughly $50 billion in total assets following the April 2026 acquisition of American National Corporation, Associated operates a full-service Midwest banking franchise of more than 200 locations across Wisconsin, Illinois, Iowa, Minnesota, Missouri and Nebraska, serving consumer, business, commercial and wealth-management customers.
+Associated Bank, N.A. is the primary banking subsidiary of Associated Banc-Corp (NYSE ASB), a nationally chartered commercial bank and the largest bank holding company headquartered in Wisconsin, based in Green Bay. With roughly $50 billion in total assets following the April 2026 acquisition of American National Corporation, Associated operates a full-service Midwest banking franchise of more than 200 locations across Wisconsin, Illinois, Iowa, Minnesota, Missouri and Nebraska, offering consumer, business, commercial and wealth-management services. Associated does not publish a first-party public developer portal or downloadable OpenAPI/Swagger specifications. Its digital banking runs on a core-provider stack (Jack Henry), and consumer-permissioned data access is delivered through third-party aggregators (Plaid, Tink/TrueLayer) rather than a direct first-party API. Its commercial treasury customers use the login-gated Associated Connect platform. No FDX participation or CFPB Section 1033 data-access posture is publicly documented as of this review.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/associated-banc-corp/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/associated-banc-corp/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · Regional Bank · Commercial Banking · Open Finance
 
-## Open Finance Posture
+## Associated Bank on APIs.io
 
-Associated Bank does **not** publish a first-party public developer portal or downloadable OpenAPI/Swagger specifications. Its posture is honest and typical of a US regional bank:
+Everything profiled for Associated Bank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/associated-banc-corp/](https://apis.io/providers/associated-banc-corp/)** — or go straight to one of the APIs or properties below.
 
-- **No first-party developer API.** Probes of `developer.associatedbank.com`, `api.associatedbank.com` and `apis.associatedbank.com` do not resolve.
-- **Core-provider stack.** Digital and core banking run on Jack Henry; the institution is documented on Jack Henry's `jackhenry.dev` as a jXchange SOAP provider (Account History Search, Account Inquiry, Account Relationship Search, Transaction Add). This is partner/enterprise-gated, not a self-serve public API, and no public WSDL/OpenAPI is published.
-- **Aggregator access.** Consumer-permissioned data is reached through third-party aggregators (Plaid, Tink/TrueLayer), not a direct first-party API.
-- **Commercial platform.** Treasury/commercial customers use the login-gated **Associated Connect** portal.
-- **FDX / CFPB 1033.** No Financial Data Exchange participation and no published Section 1033 data-access posture found as of this review (2026-07-23).
+### APIs (1)
 
-## Tags
+- [Associated Bank jXchange (Jack Henry) Integration](https://apis.io/apis/associated-banc-corp/associated-bank-jxchange/) — Associated Bank surfaces core-banking integration through its core provider, Jack Henry, via the jXchange SOAP API platform. Documented services for this…
 
-- Financial Services
-- Banking
-- United States
-- Regional Bank
-- Commercial Banking
-- Data Aggregation
-- Open Finance
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+#### Security (1)
 
-## APIs
+Authentication, trust centre, and vulnerability disclosure.
 
-### Associated Bank jXchange (Jack Henry) Integration
+- [Associated Banc Corp Domain Security](https://apis.io/security/associated-banc-corp/associated-banc-corp-domain-security/)
 
-Core-banking integration surfaced through Associated Bank's core provider, Jack Henry, via the jXchange SOAP API platform. Documented services include Account History Search, Account Inquiry, Account Relationship Search and Transaction Add. Partner/enterprise-gated and core-provider-mediated — not a first-party public API.
+## Where to find this API
 
-- **Human URL:** [https://jackhenry.dev/jxchange-soap/api-provider/associated-bank/](https://jackhenry.dev/jxchange-soap/api-provider/associated-bank/)
-
-#### Tags
-
-- Core Banking
-- SOAP
-- Jack Henry
-- jXchange
-
-#### Properties
-
-- [Documentation](https://jackhenry.dev/jxchange-soap/api-provider/associated-bank/)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.associatedbank.com/)
-- [Blog / Newsroom](https://newsroom.associatedbank.com/)
-- [LinkedIn](https://www.linkedin.com/company/associated-bank)
-- [Privacy Policy](https://www.associatedbank.com/privacy)
-- [Terms of Use](https://www.associatedbank.com/terms-of-use)
-- [Support / Contact](https://www.associatedbank.com/contact)
+- [Support](https://www.associatedbank.com/contact)
+- [Changelog](https://newsroom.associatedbank.com/releases)
+- [Blog](https://newsroom.associatedbank.com/)
+- [Terms of service](https://www.associatedbank.com/terms-of-use)
+- [Privacy policy](https://www.associatedbank.com/privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 12.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 7.9** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/associated-banc-corp/](https://apis.io/providers/associated-banc-corp/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Associated Bank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/associated-banc-corp/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
